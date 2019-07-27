@@ -237,6 +237,29 @@ header div img {
 	margin-top: 20px;
 }
 
+.new-features div {
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: -moz-flex;
+	display: -o-flex;
+	justify-content: space-between;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.new-features div img {
+	float: none;
+	-webkit-flex-dirrection: row;
+	-ms-flex-dirrection: row;
+	-moz-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	flex-grow: 1;
+	margin: 5px;
+
+}
+
 /*Autre styles*/
 .clear {
 	clear: both;
@@ -271,6 +294,18 @@ header div img {
 	background-color: white;
 }
 
+.mmobile-none {
+	display: none;
+}
+
+.tablet-none {
+	display: none;
+}
+
+.mobile-block {
+	display: block;
+}
+
 /*---------Taille tablette------------*/
 @media screen and (min-device-width: 640px) {
 	header div img, header div h1 {
@@ -292,9 +327,14 @@ header div img {
 		margin-right: auto;
 	}
 
-	.mobile {
+	.mmobile-none {
+		display: block;
+	}
+
+	.mobile-block {
 		display: none;
 	}
+
 }
 
 /*---------Taille grand ecran------------*/
@@ -352,5 +392,9 @@ header div img {
 	article img:nth-of-type(even) {
 		float: right;
 		margin-left: 20px;
+	}
+
+	.tablet-none {
+		display: block;
 	}
 }
